@@ -2,8 +2,6 @@
 
 FinSight Observer is a lightweight system observability agent designed to collect and expose host-level metrics for monitoring and reliability engineering.
 
-This project simulates a real-world Site Reliability Engineering (SRE) observability component used in fintech and distributed systems environments.
-
 ## Features
 
 - CPU usage monitoring
