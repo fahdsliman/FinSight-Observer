@@ -42,6 +42,7 @@ http://localhost:9090/metrics
 
 ## Example metrics
 
+
 finsight_cpu_usage_percent
 finsight_memory_usage_percent
 finsight_disk_usage_percent
