@@ -10,6 +10,7 @@ Metrics exposed:
 - Disk usage (%)
 - Network I/O (bytes sent + received)
 
+
 Author: Fahd Sliman
 """
 
@@ -19,7 +20,7 @@ import logging
 from prometheus_client import start_http_server, Gauge
 
 # ---------------------------------------------------------
-# Configuration
+# Configurations
 # ---------------------------------------------------------
 
 METRICS_PORT = 9090        # Port Prometheus will scrape
