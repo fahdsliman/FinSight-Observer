@@ -2,6 +2,7 @@
 FinSight Observer - System Metrics Exporter
 
 
+
 This agent collects host-level system metrics and exposes them
 via an HTTP endpoint compatible with Prometheus.
 
