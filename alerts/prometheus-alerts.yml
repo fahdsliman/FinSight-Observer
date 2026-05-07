@@ -62,5 +62,6 @@ groups:
         labels:
           severity: warning
         annotations:
+        
           summary: "Unusually high network throughput"
           description: "Network throughput has exceeded 100MB/s for 5 minutes. Possible traffic spike or data exfiltration."
