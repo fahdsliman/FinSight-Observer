@@ -32,8 +32,9 @@ jobs:
         run: |
           docker run --rm \
             -v ${{ github.workspace }}/alerts:/alerts \
+            --entrypoint /bin/promtool \
             prom/prometheus:latest \
-            promtool check rules /alerts/prometheus-alerts.yml
+            check rules /alerts/prometheus-alerts.yml
 
       - name: Build Docker image
         run: docker build -t finsight-observer:ci .
