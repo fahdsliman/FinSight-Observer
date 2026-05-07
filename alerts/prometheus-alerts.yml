@@ -1,0 +1,66 @@
+groups:
+  - name: finsight.system.alerts
+    rules:
+
+      - alert: HighCPUUsage
+        expr: finsight_cpu_usage_percent > 85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage has been above 85% for more than 2 minutes. Current value: {{ $value }}%"
+
+      - alert: CriticalCPUUsage
+        expr: finsight_cpu_usage_percent > 95
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Critical CPU usage"
+          description: "CPU usage is critically high at {{ $value }}%. Immediate investigation required."
+
+      - alert: HighMemoryUsage
+        expr: finsight_memory_usage_percent > 85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage has exceeded 85% for 2 minutes. Current value: {{ $value }}%"
+
+      - alert: CriticalMemoryUsage
+        expr: finsight_memory_usage_percent > 95
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Critical memory pressure"
+          description: "Memory usage at {{ $value }}%. Risk of OOM. Immediate action required."
+
+      - alert: DiskSpaceLow
+        expr: finsight_disk_usage_percent > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk space running low"
+          description: "Disk usage is at {{ $value }}%. Plan for cleanup or expansion."
+
+      - alert: DiskSpaceCritical
+        expr: finsight_disk_usage_percent > 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Disk space critically low"
+          description: "Disk usage at {{ $value }}%. Service disruption imminent without intervention."
+
+      - alert: HighNetworkThroughput
+        expr: rate(finsight_network_usage_bytes_total[5m]) > 100000000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unusually high network throughput"
+          description: "Network throughput has exceeded 100MB/s for 5 minutes. Possible traffic spike or data exfiltration."
