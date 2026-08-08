@@ -1,9 +1,7 @@
 # FinSight Observer
-
 ```
 FinSight Observer is a lightweight system observability agent designed to collect and expose host-level metrics for monitoring and reliability engineering.
-```
-```
+
 ## Features of FinSight Observer
 
 - CPU usage monitoring
