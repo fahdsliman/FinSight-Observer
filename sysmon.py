@@ -1,8 +1,4 @@
-
-
 """
-
-
 FinSight Observer - System Metrics Exporter
 
 This agent collects host-level system metrics and exposes them
@@ -122,3 +118,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+""" Author: Fahd Sliman """
