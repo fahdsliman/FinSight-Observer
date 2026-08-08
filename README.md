@@ -52,4 +52,3 @@ finsight_network_usage_bytes_total
 Author 
 
 Fahd Sliman
-Site Reliability Engineering / Observability Project
