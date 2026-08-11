@@ -10,3 +10,4 @@ COPY sysmon.py .
 EXPOSE 9090
 
 CMD ["python", "sysmon.py"]
+
