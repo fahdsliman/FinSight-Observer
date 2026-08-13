@@ -1,4 +1,5 @@
 # FinSight Observer
+
 ```
 FinSight Observer is a lightweight system observability agent designed to collect and expose host-level metrics for monitoring and reliability engineering.
 
@@ -41,7 +42,6 @@ python sysmon.py
 http://localhost:9090/metrics
 
 ## Example metrics
-
 
 finsight_cpu_usage_percent
 finsight_memory_usage_percent
