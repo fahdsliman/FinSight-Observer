@@ -29,7 +29,7 @@ Clone the repository:
 git clone git@github.com:fahdsliman/FinSight-Observer.git
 cd FinSight-Observer
 
-## install dependencies
+## install all dependencies
 
 pip install psutil prometheus_client
 
@@ -37,7 +37,7 @@ pip install psutil prometheus_client
 
 python sysmon.py
 
-## Access the metrics
+## Access (visualize) the metrics
 
 http://localhost:9090/metrics
 
