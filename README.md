@@ -25,7 +25,6 @@ FinSight Observer runs as a background agent that:
 
 Clone the repository:
 
-
 git clone git@github.com:fahdsliman/FinSight-Observer.git
 cd FinSight-Observer
 
